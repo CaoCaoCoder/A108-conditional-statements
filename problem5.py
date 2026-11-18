@@ -39,10 +39,8 @@ d = math.pow(b, 2) - 4 * a * c
 
 if d >= 0:
     r = math.sqrt(d)%2
-    if r == 0:
+    if r == 0 or 1:
         print("the equation can be factored")
-    if r != 0:
-        print("pinrt")
 
 else:
     print("equation cannot be factored")
