@@ -29,3 +29,20 @@ Enter c: 8
 the equation can not be factored
 
 """
+import math
+
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+c = float(input("Enter c: "))
+
+d = math.pow(b, 2) - 4 * a * c
+
+if d >= 0:
+    r = math.sqrt(d)%2
+    if r == 0:
+        print("the equation can be factored")
+    if r != 0:
+        print("pinrt")
+
+else:
+    print("equation cannot be factored")

@@ -23,3 +23,22 @@
  Enter password: password
  Access denied
 """
+
+
+ign = str.strip(input("Enter username: "))
+
+if ign != "admin":
+    print("\nInvalid user")
+
+if ign == "admin":
+
+    pswrd = str.strip(input("\nEnter password: "))
+
+    if pswrd == ("12345password"):
+
+        print("\nAccess granted")
+
+    else:
+        print("\nAccess denied")
+
+    

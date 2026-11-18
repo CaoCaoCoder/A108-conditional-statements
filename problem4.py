@@ -33,3 +33,22 @@ that is an obtuse triangle
 
 
 """
+import math
+
+t1 = float(input("Enter one side of a triangle: "))
+t2 = float(input("Enter the second side: "))
+t3 = float(input("Enter the third side: "))
+
+hyp = float(max(t1, t2, t3))
+c = math.pow(hyp, 2)
+
+sum = math.pow(t1, 2)+math.pow(t2, 2)+math.pow(t3, 2) - c
+
+if c == sum:
+    print("This is a right triangle")
+
+if c > sum:
+    print("This is an obtuse triangle")
+
+if c < sum:
+    print("This is an acute triangle")
